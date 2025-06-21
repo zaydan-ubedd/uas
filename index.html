@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WartaNesia - Portal Masuk</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top, #111 0%, #000 100%);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .container {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 40px;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(15px);
+      animation: fadeIn 1.2s ease-in-out;
+      max-width: 400px;
+      width: 90%;
+    }
+    .logo {
+      font-family: 'Georgia', serif;
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .subtext {
+      font-size: 13px;
+      color: #ccc;
+      letter-spacing: 1px;
+      margin-bottom: 30px;
+    }
+    .button {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      margin: 12px 0;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .admin-btn {
+      background: #ffffff;
+      color: #111;
+    }
+    .admin-btn:hover {
+      background: #e0e0e0;
+      transform: scale(1.03);
+    }
+    .guest-btn {
+      background: transparent;
+      color: #fff;
+      border: 1px solid #555;
+    }
+    .guest-btn:hover {
+      background: #2a2a2a;
+      transform: scale(1.03);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">WartaNesia</div>
+    <div class="subtext">PORTAL MASUK</div>
+    <a href="admin/login.php" class="button admin-btn">Masuk sebagai Admin</a>
+    <a href="public/index.php" class="button guest-btn">Masuk sebagai Pengunjung</a>
+  </div>
+</body>
+</html>
